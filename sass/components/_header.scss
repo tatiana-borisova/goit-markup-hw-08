@@ -64,6 +64,7 @@
 }
 .main-nav__menu {
   display: flex;
+  flex-grow: 1;
 
   @media screen and (min-width: $tablet) {
     align-items: center;
@@ -171,6 +172,11 @@
 .header-contacts__link {
   @media screen and (min-width: $tablet) {
     color: $primary-text-color;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+    font-size: 12px;
+    line-height: 1.16;
   }
 
   @media screen and (min-width: $desktop) {
