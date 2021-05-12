@@ -1,92 +1,97 @@
-// .form {
-//   margin: 0 auto;
-// }
-// .form__field {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   margin-top: 10px;
-// }
-// .form__label {
-//   margin-bottom: 4px;
-//   font-size: 12px;
-//   line-height: 1.16;
-//   letter-spacing: 0.01em;
-// }
-// .form__input,
-// .form__textarea {
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
-//   padding: 12px 16px 12px 42px;
-//   background: transparent;
-//   transition-property: outline, border;
-//   transition-duration: $duration;
-//   transition-timing-function: $timing-function;
+.form {
+  margin: 0 auto;
+}
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.form__input,
+.form__textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px 12px 42px;
+  background: transparent;
+  transition-property: outline, border;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 
-//   &:focus {
-//     outline: none;
-//     border: 1px solid $accent-color;
-//   }
-// }
-// .form__textarea {
-//   padding: 12px 16px;
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+}
+.form__textarea {
+  padding: 12px 16px;
 
-//   &::placeholder {
-//     letter-spacing: 0.01em;
-//     color: rgba(117, 117, 117, 0.5);
-//   }
-// }
-// .form__icon {
-//   position: absolute;
-//   bottom: 11px;
-//   left: 12px;
-//   fill: $title-text-color;
-//   @include transition(fill);
+  &::placeholder {
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: $title-text-color;
+  @include transition(fill);
 
-//   .form__input:focus + & {
-//     fill: $accent-color;
-//   }
-// }
+  .form__input:focus + & {
+    fill: $accent-color;
+  }
+}
 
-// .consent {
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   margin: 20px 0 30px;
-//   line-height: 1.71;
-// }
-// .consent__checkbox {
-//   @extend %visually-hidden;
-// }
-// .consent__unchecked {
-//   margin-right: 8px;
-//   width: 16px;
-//   height: 15px;
-//   border: 2px solid $title-text-color;
-//   border-radius: 2px;
+.consent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 30px;
+  line-height: 1.71;
 
-//   @include transition(border);
+  @media screen and (max-width: #{$desktop}) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+.consent__checkbox {
+  @extend %visually-hidden;
+}
+.consent__unchecked {
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
 
-//   .consent__checkbox:focus ~ & {
-//     border: 2px solid $accent-color;
-//   }
-// }
-// .consent__check {
-//   position: absolute;
-//   fill: white;
-//   background-color: $accent-color;
-//   border-radius: 2px;
-//   background-origin: border-box;
-//   opacity: 0;
+  @include transition(border);
 
-//   @include transition(opacity);
+  .consent__checkbox:focus ~ & {
+    border: 2px solid $accent-color;
+  }
+}
+.consent__check {
+  position: absolute;
+  fill: white;
+  background-color: $accent-color;
+  border-radius: 2px;
+  background-origin: border-box;
+  opacity: 0;
 
-//   .consent__checkbox:checked + & {
-//     opacity: 1;
-//   }
-// }
-// .consent__agreement {
-//   display: block;
-//   margin-left: 4px;
-//   color: $accent-color;
-// }
+  @include transition(opacity);
+
+  .consent__checkbox:checked + & {
+    opacity: 1;
+  }
+}
+.consent__agreement {
+  display: block;
+  margin-left: 4px;
+  color: $accent-color;
+}
