@@ -86,6 +86,7 @@
 
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
 
     transition-property: opacity, visibility;
     transition-duration: $duration;
@@ -94,6 +95,7 @@
     &.is-open {
       opacity: 1;
       visibility: visible;
+      pointer-events: initial;
     }
   }
 }
@@ -109,14 +111,12 @@
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
-
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
-  }
-
-  @media screen and (min-width: $tablet) {
-    margin-left: auto;
   }
 }
 .site-nav__item:not(:last-child) {
@@ -144,7 +144,7 @@
 
 .site-nav__link,
 .header-contacts__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   color: $title-text-color;
 

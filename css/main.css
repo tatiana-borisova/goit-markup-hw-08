@@ -238,6 +238,7 @@ textarea {
     background-color: #ffffff;
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     -webkit-transition-property: opacity, visibility;
     transition-property: opacity, visibility;
     -webkit-transition-duration: 250ms;
@@ -248,6 +249,7 @@ textarea {
   .main-nav__menu.is-open {
     opacity: 1;
     visibility: visible;
+    pointer-events: initial;
   }
 }
 
@@ -274,6 +276,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-contacts {
     display: -webkit-box;
@@ -282,12 +290,6 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header-contacts {
-    margin-left: auto;
   }
 }
 
@@ -323,9 +325,9 @@ textarea {
 
 .site-nav__link,
 .header-contacts__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
