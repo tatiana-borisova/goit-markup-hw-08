@@ -1,31 +1,82 @@
-// .banner {
-//   max-width: 1600px;
-//   width: 100%;
-//   margin-right: auto;
-//   margin-left: auto;
-//   text-align: center;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   background-color: $footer-bg-color;
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url('../images/banner/banner.jpg');
-//   background-size: cover;
-//   background-position: center;
-// }
-// .banner__container {
-//   max-width: 696px;
-// }
-// .banner__title {
-//   display: block;
-//   margin-bottom: 30px;
-//   color: white;
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-// }
+.banner {
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 118px 0;
+  background-color: $footer-bg-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/banner/banner-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/banner/banner-mobile@2x.jpg');
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/banner/banner-tablet.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/banner/banner-tablet@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/banner/banner-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/banner/banner-desktop@2x.jpg');
+    }
+  }
+}
+.banner__container {
+  max-width: 360px;
+  padding: 0;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+  }
+}
+.banner__title {
+  display: block;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
