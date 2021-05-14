@@ -50,7 +50,7 @@
 
 .consent {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin: 20px 0 30px;
   line-height: 1.71;
@@ -91,7 +91,5 @@
   }
 }
 .consent__agreement {
-  display: block;
-  margin-left: 4px;
   color: $accent-color;
 }
