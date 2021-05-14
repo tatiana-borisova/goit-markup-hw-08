@@ -3,12 +3,12 @@
 
   font-family: $logo-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
 
-  @media screen and (max-width: calc(#{$desktop} - 1px)) {
-    font-size: 24px;
-    line-height: 1.16;
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 .logo__web {
@@ -16,18 +16,17 @@
 }
 .logo--black {
   color: black;
+  padding: 16px 0;
 
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
-    padding: 16px 0;
-    margin: 0;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    padding: 26px 0;
+    margin-right: 88px;
   }
 
-  @media screen and (max-width: calc(#{$desktop} - 1px)) {
-    margin-right: 88px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
   }
 }
 .logo--white {

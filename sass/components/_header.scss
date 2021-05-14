@@ -71,7 +71,7 @@
     align-items: center;
   }
 
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  @media screen and (max-width: $max-mobile) {
     position: absolute;
     top: 0;
     left: 0;
@@ -107,7 +107,7 @@
   }
 }
 .header-contacts {
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  @media screen and (max-width: $max-mobile) {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -117,7 +117,7 @@
   }
 }
 .site-nav__item:not(:last-child) {
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  @media screen and (max-width: $max-mobile) {
     margin-bottom: 32px;
   }
   @media screen and (min-width: $tablet) {
@@ -126,11 +126,11 @@
 }
 
 .header-contacts__item:not(:last-child) {
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  @media screen and (max-width: $max-mobile) {
     margin-top: 32px;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     margin-bottom: 10px;
   }
 
@@ -155,7 +155,7 @@
     color: $accent-color;
   }
 
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  @media screen and (max-width: $max-mobile) {
     font-size: 40px;
     line-height: 1.17;
   }
@@ -171,7 +171,7 @@
     color: $primary-text-color;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     font-size: 12px;
     line-height: 1.16;
   }
@@ -182,14 +182,14 @@
   }
 }
 .header-contacts__link--mail {
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  @media screen and (max-width: $max-mobile) {
     font-size: 24px;
     line-height: 1.16;
     color: $primary-text-color;
   }
 }
 .header-contacts__link--tel {
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  @media screen and (max-width: $max-mobile) {
     font-size: 34px;
     line-height: 40px;
     color: $accent-color;
@@ -212,19 +212,31 @@
   }
 }
 .header-contacts__icon {
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  margin-right: 10px;
+  fill: currentColor;
+
+  @media screen and (max-width: $max-mobile) {
     display: none;
   }
 
-  margin-right: 10px;
-  fill: currentColor;
+  @media screen and (max-width: $max-tablet) {
+    margin-right: 8px;
+    &--mail {
+      width: 14px;
+      height: 10px;
+    }
+    &--tel {
+      width: 10px;
+      height: 14px;
+    }
+  }
 }
 
 .menu-social {
   display: none;
   margin-left: -10px;
   margin-top: 54px;
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+  @media screen and (max-width: $max-mobile) {
     display: flex;
     flex-wrap: wrap;
   }
