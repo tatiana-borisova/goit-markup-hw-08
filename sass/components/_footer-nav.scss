@@ -1,4 +1,8 @@
 .footer__nav {
+  @media screen and (max-width: $max-tablet) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: $desktop) {
     &:not(:last-child) {
       margin-right: 70px;
