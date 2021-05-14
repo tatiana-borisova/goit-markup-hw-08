@@ -961,9 +961,11 @@ textarea {
   }
 }
 
-.footer__subscribe {
-  margin: 0 auto;
-  max-width: 450px;
+@media screen and (max-width: calc(1200px - 1px)) {
+  .footer__subscribe {
+    margin: 0 auto;
+    max-width: 450px;
+  }
 }
 
 @media screen and (max-width: calc(1200px - 1px)) {

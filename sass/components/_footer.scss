@@ -32,6 +32,8 @@
   }
 }
 .footer__subscribe {
-  margin: 0 auto;
-  max-width: 450px;
+  @media screen and (max-width: $max-tablet) {
+    margin: 0 auto;
+    max-width: 450px;
+  }
 }
