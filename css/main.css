@@ -1283,7 +1283,7 @@ textarea {
 
 .consent__unchecked {
   margin-right: 8px;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
