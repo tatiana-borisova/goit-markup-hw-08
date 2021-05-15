@@ -1,18 +1,28 @@
 .filters {
   margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 .filters__list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: -7.5px -4px;
+  margin-left: -8px;
+  margin-top: -15px;
 
   @media screen and (min-width: $tablet) {
     justify-content: center;
   }
 }
 .filters__item {
-  margin: 7.5px 4px;
+  margin-left: 8px;
+  margin-top: 15px;
 }
 .filters__button {
   color: $title-text-color;

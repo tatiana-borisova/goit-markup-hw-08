@@ -13,7 +13,7 @@
 }
 
 .work__item {
-  width: calc((100% - 6 * 15px) / 3);
+  flex-basis: calc((100% - 6 * 15px) / 3);
   margin: 15px;
 }
 
