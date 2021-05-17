@@ -272,6 +272,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .main-nav__menu {
+    padding: 38px 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -363,18 +369,17 @@ textarea {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .site-nav__link,
-  .header-contacts__link {
-    font-size: 30px;
-    line-height: 0.88;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .site-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .site-nav__link {
+    font-size: 30px;
+    line-height: 0.88;
   }
 }
 

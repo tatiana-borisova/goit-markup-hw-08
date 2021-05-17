@@ -100,6 +100,9 @@
       pointer-events: initial;
     }
   }
+  @media screen and (max-width: 380px) {
+    padding: 38px 30px;
+  }
 }
 
 .site-nav {
@@ -161,16 +164,15 @@
     font-size: 40px;
     line-height: 1.17;
   }
-
-  @media screen and (max-width: 320px) {
-    font-size: 30px;
-    line-height: 0.88;
-  }
 }
 .site-nav__link {
   @media screen and (min-width: $tablet) {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 30px;
+    line-height: 0.88;
   }
 }
 .header-contacts__link {
