@@ -111,6 +111,7 @@
   @media screen and (max-width: $max-mobile) {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 40px;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -160,6 +161,11 @@
     font-size: 40px;
     line-height: 1.17;
   }
+
+  @media screen and (max-width: 320px) {
+    font-size: 30px;
+    line-height: 0.88;
+  }
 }
 .site-nav__link {
   @media screen and (min-width: $tablet) {
@@ -188,12 +194,22 @@
     line-height: 1.16;
     color: $primary-text-color;
   }
+
+  @media screen and (max-width: 376px) {
+    font-size: 20px;
+    line-height: 1.17;
+  }
 }
 .header-contacts__link--tel {
   @media screen and (max-width: $max-mobile) {
     font-size: 34px;
     line-height: 40px;
     color: $accent-color;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 .site-nav__current {

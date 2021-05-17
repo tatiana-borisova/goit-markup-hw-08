@@ -289,6 +289,7 @@ textarea {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin-top: 40px;
   }
 }
 
@@ -362,6 +363,14 @@ textarea {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .site-nav__link,
+  .header-contacts__link {
+    font-size: 30px;
+    line-height: 0.88;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav__link {
     padding-top: 32px;
@@ -397,11 +406,25 @@ textarea {
   }
 }
 
+@media screen and (max-width: 376px) {
+  .header-contacts__link--mail {
+    font-size: 20px;
+    line-height: 1.17;
+  }
+}
+
 @media screen and (max-width: calc(768px - 1px)) {
   .header-contacts__link--tel {
     font-size: 34px;
     line-height: 40px;
     color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header-contacts__link--tel {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
